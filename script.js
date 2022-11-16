@@ -19,7 +19,8 @@ const section_1 = document.querySelector("#section-1");
 
 // //observer is observing section-1
 // observer.observe(section_1);
-//////////////////////////
+
+//////////////////////////sticky nav
 const header = document.querySelector(".header");
 const headerHeight = header.getBoundingClientRect().height;
 const stickyNav = function (entries, headerObserver) {
@@ -49,5 +50,19 @@ buttons.forEach((btn) => {
     document.querySelector(href).scrollIntoView({
       behavior: "smooth",
     });
+
+    navbar.classList.add("nav-close");
+    navbar.classList.remove("nav-open");
   });
 });
+
+//////////////////////////////////
+const menu_option = document.querySelector(".menu-option");
+const navbar = document.querySelector(".navbar");
+
+menu_option.addEventListener("click", (e) => {
+  navbar.classList.add("nav-open");
+  navbar.classList.remove("nav-close");
+});
+
+console.log(navbar.name);

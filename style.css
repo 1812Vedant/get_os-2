@@ -1,10 +1,12 @@
 .header {
   background-color: #dbeefd;
+  position: relative;
 }
 
 .header-div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* it should be flexbox not grid becoz of responsiveness */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -16,6 +18,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-option {
+  width: 5rem;
+}
+
+.cross-option {
+  width: 5rem;
+}
+
+/* class with cross-option and name cross option so apply this css property  */
+.cross-option[name="cross-option"] {
+  display: none;
 }
 
 .section-hero {
