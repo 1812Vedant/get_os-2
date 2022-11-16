@@ -29,20 +29,23 @@
         <nav class="navbar">
           <ul class="navbar-list">
             <li class="button button-secondary button-home">
-              <a href="#">Home</a>
+              <a class="btn btn-home" href="#section-1">Home</a>
             </li>
             <li class="button button-secondary button-steps">
-              <a href="#">Steps</a>
+              <a class="btn btn-steps" href="#section-3">Steps</a>
             </li>
             <li class="button button-primary button-getos">
-              <a href="#">Get OS</a>
+              <a class="btn btn-getos" href="#section-2">Get OS</a>
+            </li>
+            <li class="button button-secondary button-steps">
+              <a class="btn-ventoy" href="#">Ventoy &darr;</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="section-hero container grid--2">
+      <section class="section-hero container grid--2" id="section-1">
         <div class="section-hero-box-1">
           <h1 class="heading-primary">
             Get whatever operating system you need now
@@ -55,8 +58,12 @@
               a cupiditate!
             </p>
             <ul class="heading-description-list">
-              <li class="button button-primary"><a href="#">Get_OS Now</a></li>
-              <li class="button button-secondary"><a href="#">See Steps</a></li>
+              <li class="button button-primary">
+                <a class="btn btn-getos" href="#section-2">Get_OS Now</a>
+              </li>
+              <li class="button button-secondary">
+                <a class="btn btn-steps" href="#section-3">See Steps</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -64,7 +71,7 @@
           <img class="main-img" src="./img/main-os-01.png" alt="main-img" />
         </div>
       </section>
-      <section class="section-downloads container grid--1">
+      <section class="section-downloads container grid--1" id="section-2">
         <div class="section-downloads-box-1">
           <h2 class="heading-secondary">Download Your Operating System</h2>
           <p class="heading-secondary-description">
@@ -198,7 +205,7 @@
           </div>
         </div>
       </section>
-      <section class="steps-to-follow container grid--1">
+      <section class="steps-to-follow container grid--1" id="section-3">
         <div class="steps-to-follow-box-1">
           <h2 class="heading-secondary">Steps to download</h2>
           <p class="heading-secondary-description">

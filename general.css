@@ -16,6 +16,15 @@ html {
 .container-header {
   padding: 0 6rem 0;
   /* top left|right bottom */
+  width: 100%;
+  height: 9rem;
+}
+
+/* container-header and sticky at same time */
+.container-header.sticky {
+  position: fixed;
+  background-color: #dbeefd;
+  opacity: 90%;
 }
 
 .logo-container {
